@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a,b,;
+char op;
+clrscr();
+printf("Enter the first number: ");
+scanf("%d", &a);
+printf("Enter an opeartor(+,-,*,/):  ");
+scanf("%c", &op);
+printf("Enter the second number: ");
+scanf("%d", &b);
+
+switch (op)
+{
+case '+':
+printf("%d + %d = %d", a,b,a + b);
+break;
+
+case '-':
+printf("%d - %d = %d", a ,b, a - b);
+break;
+
+case '*':
+printf("%d * %d = %d", a , b, a * b);
+break;
+
+case '/':
+if(b != 0)
+printf("%d / %d = %d", a , b, a / b);
+
+else
+      printf("ERROR Division by zero is not allowed");
+      break;
+
+default:
+printf("Invalid operator");
+
+}
+getch();
+}
